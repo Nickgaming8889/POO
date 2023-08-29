@@ -8,11 +8,14 @@ class Gps
 {
     //Atributos...
     public:
-    float longitud, latitud;
-    
+    float _longitud, _latitud;
+    string _velocidad;
 
     //Metodos...
-    Gps()
+    Gps();
+    void ubicacion(float, float);
+    string mostrarVelocidad(void);
+
 };
 
 #endif

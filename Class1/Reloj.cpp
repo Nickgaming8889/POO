@@ -20,5 +20,4 @@ void Reloj::encerLuz(bool status) {
 void Reloj::fijarHora(int hora, int minuto) {
     this->hora = hora;
     this->minuto = minuto;
-
 }

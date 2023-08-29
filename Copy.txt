@@ -14,8 +14,8 @@ void Car::frenar(bool status) {
         cout << "Frenando" << endl;
 }
 bool Car::girar(bool status) {
-    if (status)
+    if (status == true)
         cout << "Girando a la derecha" << endl;
-        else
+        else if (status == false)
             cout << "Girando a la izquierda" << endl;
 }
