@@ -6,8 +6,13 @@ using namespace std;
 
 class Gps
 {
+    //Atributos...
     public:
+    float longitud, latitud;
     
+
+    //Metodos...
+    Gps()
 };
 
 #endif
