@@ -1,9 +1,16 @@
 #include <iostream>
-#include "Car.h"
+#include "Auto.h"
 
 using namespace std;
 
 int main() {
-    Car uno;
-    Car dos;
+    Auto one;
+    Auto two;
+    Auto three;
+
+    one.acelerar(true);
+    two.frenar(false);
+    three.girar(true);
+
+    return 0;
 }

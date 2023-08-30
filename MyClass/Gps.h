@@ -13,7 +13,7 @@ class Gps
 
     //Metodos...
     Gps();
-    void ubicacion(float, float);
+    void ubicacion(void);
     string mostrarVelocidad(void);
 
 };

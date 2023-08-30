@@ -5,7 +5,7 @@
 using namespace std;
 
 
-class Car
+class Auto
 {
 
     //Atributos...
@@ -13,15 +13,15 @@ class Car
     int year;
     string tipo;
     string marca;
-
-    private:
-    int _potencia;
-
+    
     //Metodos...
-    Car();
+    Auto();
     void acelerar(bool);
     void frenar(bool);
-    bool girar(bool);
+    void girar(bool);
+    
+    private:
+    int _potencia;
 
 };
 

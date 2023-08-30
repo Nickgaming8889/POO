@@ -5,9 +5,10 @@ Gps::Gps() {
     _latitud = -108.5548;
     _velocidad = "80 km/h";
 }
-void Gps::ubicacion(float longitud, float latitud) {
-    this->_longitud = longitud;
-    this->_latitud = latitud;
+void Gps::ubicacion(void) {
+
+    cout << "Longitud: " << _longitud << endl;
+    cout << "Latitud: " << _latitud << endl;
 }
 string Gps::mostrarVelocidad(void) {
     return _velocidad;
