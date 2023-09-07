@@ -6,7 +6,6 @@ Gps::Gps() {
     _velocidad = "80 km/h";
 }
 void Gps::ubicacion(void) {
-
     cout << "Longitud: " << _longitud << endl;
     cout << "Latitud: " << _latitud << endl;
 }
