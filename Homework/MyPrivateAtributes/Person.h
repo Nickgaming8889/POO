@@ -16,9 +16,25 @@ class Person {
         Person();
         Person(std::string);
         Person(int, float);
+        Person(int, Viola &one);
+        Person(float, Viola &two);
 
+        void tomarArco(bool);
+        void tocarMusica(bool);
         
         ~Person();
+
+        int getEdad(void);
+        void setEdad(int);
+
+        float getEstatura(void);
+        void setEstatura(float);
+
+        float getSalario(void);
+        void setSalario(float);
+
+        std::string getGenero(void);
+        void setGenero(std::string);
 };
 
 #endif
