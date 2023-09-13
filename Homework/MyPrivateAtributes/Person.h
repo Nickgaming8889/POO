@@ -11,16 +11,16 @@ class Person {
         float estatura;
         float salario;
         std::string genero;
+        std::string dormir;
+        //Viola marca;
 
     public:
         Person();
         Person(std::string);
         Person(int, float);
+        Person(std::string);
         Person(int, Viola &one);
         Person(float, Viola &two);
-
-        void tomarArco(bool);
-        void tocarMusica(bool);
         
         ~Person();
 

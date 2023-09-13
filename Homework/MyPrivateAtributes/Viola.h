@@ -7,7 +7,7 @@
 
 class Viola {
     private:
-        std::string tamaño;
+        std::string side;
         std::string marca;
         std::string afinacion;
         int numCuerdas;
@@ -17,14 +17,14 @@ class Viola {
         Viola();
         Viola(int);
         Viola(std::string, std::string);
-        Viola(float);
+        //Viola(float); Esta no va...
         Viola(std::string);
-        Viola(Arco &one, std::string);
+        Viola(Arco &one, float);
 
         ~Viola();
 
-        std::string getTamaño(void);
-        void setTamaño(std::string);
+        std::string getSide(void);
+        void setSide(std::string);
 
         std::string getMarca(void);
         void setMarca(std::string);

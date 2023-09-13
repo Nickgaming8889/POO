@@ -18,7 +18,7 @@ class Arco {
         Arco(std::string, std::string);
         Arco(int, float);
         Arco(std::string);
-        Arco(Person &one, std::string);
+        Arco(Viola &one, std::string);
 
         ~Arco();
 
