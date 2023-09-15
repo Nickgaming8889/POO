@@ -11,7 +11,7 @@ class Viola {
         std::string marca;
         std::string afinacion;
         int numCuerdas;
-        float volumen;
+        std::string volumen;
 
     public:
         Viola();
@@ -19,7 +19,7 @@ class Viola {
         Viola(std::string, std::string);
         //Viola(float); Esta no va...
         Viola(std::string);
-        Viola(Arco &one, float);
+        Viola(Arco &one, std::string);
 
         ~Viola();
 
@@ -35,8 +35,8 @@ class Viola {
         int getNumCuerdas(void);
         void setNumCuerdas(int);
 
-        float getVolumen(void);
-        void setVolumen(float);
+        std::string getVolumen(void);
+        void setVolumen(std::string);
 };
 
 #endif

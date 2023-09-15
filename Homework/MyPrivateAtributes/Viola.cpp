@@ -16,7 +16,37 @@ Viola::Viola(std:: string _marca, std::string _side) {
 Viola::Viola(std::string _afinacion) {
     this->afinacion = _afinacion;
 }
-Viola::Viola(Arco& one, float _volumen) {
+Viola::Viola(Arco& one, std::string _volumen) {
     one.getTesion();
-    
+    this->volumen = _volumen;
+
+    if (one.getTesion() == "Alta") {
+        _volumen = "Del 80% o mas...";
+        std::cout << _volumen << std::endl;
+    }
+    else if (one.getTesion() == "Media") {
+        _volumen = "Del 50% o mas...";
+        std::cout << _volumen << std::endl;
+    }
+    else if (one.getTesion() == "Baja") {
+        _volumen = "Del 50% o menos...";
+        std::cout << _volumen << std::endl;
+    }
+    else {
+        _volumen = "Sonido nulo...";
+        std::cout << _volumen << std::endl;
+    }
+}
+
+std::string Viola::getSide(void) {
+    return side;
+}
+void Viola::setSide(std::string _side) {
+    side = _side;
+}
+std::string Viola::getMarca(void) {
+    return marca;
+}
+void Viola::setMarca(std::string _marca) {
+    marca = _marca;
 }

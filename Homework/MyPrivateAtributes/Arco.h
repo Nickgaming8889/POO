@@ -8,7 +8,7 @@
 class Arco {
     private:
         int numCerdas;
-        float tension;
+        std::string tension;
         std::string material;
         std::string largo;
         std::string marca;
@@ -16,7 +16,7 @@ class Arco {
     public:
         Arco();
         Arco(std::string, std::string);
-        Arco(int, float);
+        Arco(int, std::string);
         Arco(std::string);
         Arco(Viola &one, std::string);
 
@@ -25,8 +25,8 @@ class Arco {
         int getNumCerdas(void);
         void setNumCerdas(int);
 
-        float getTesion(void);
-        void setTesion(float);
+        std::string getTesion(void);
+        void setTesion(std::string);
 
         std::string getMaterial(void);
         void setMaterial(std::string);
