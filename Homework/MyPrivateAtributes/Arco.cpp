@@ -1,6 +1,4 @@
 #include "Arco.h"
-#include "Viola.h"
-#include "Person.h"
 
 Arco::Arco() {
     numCerdas = 0;
