@@ -2,10 +2,13 @@
 
 Viola::Viola() {
     marca = "";
+    afinacion = "";
+    side = "";
+    volumen = "";
 }
-/*Viola::~Viola() {
+Viola::~Viola() {
 
-}*/
+}
 Viola::Viola(int _numCuerdas) {
     this->numCuerdas = _numCuerdas;
 }

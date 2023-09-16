@@ -12,13 +12,12 @@ class Person {
         float salario;
         std::string genero;
         std::string dormir;
-        //Viola marca;
+        //Viola;
 
     public:
         Person();
         Person(std::string);
         Person(int, float);
-        Person(std::string);
         Person(int, Viola &one);
         Person(float, Viola &two);
         
@@ -36,8 +35,6 @@ class Person {
         std::string getGenero(void);
         void setGenero(std::string);
 
-        std::string getDormir(void);
-        void setDormir(std::string);
 };
 
 #endif

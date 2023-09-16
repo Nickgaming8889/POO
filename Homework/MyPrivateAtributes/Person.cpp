@@ -3,12 +3,15 @@
 #include "Arco.h"
 
 Person::Person() {
-    genero = "Masculino";
-    edad = 20;
+    genero = "";
+    dormir = "";
+    edad = 0;
+    salario = 0.0;
+    estatura = 0.0;
 }
-/*Person::~Person() {
+Person::~Person() {
 
-}*/
+}
 Person::Person(std::string _genero) {
     this->genero = _genero;
 }
@@ -16,9 +19,9 @@ Person::Person(int _edad, float _estatura) {
     this->edad = _edad;
     this->estatura = _estatura;
 }
-Person::Person(std::string _dormir) {
+/*Person::Person(std::string _dormir) {
     this->dormir = _dormir;
-}
+}*/
 Person::Person(int _edad, Viola& one) {
     this->edad = _edad;
     
@@ -39,10 +42,10 @@ Person::Person(float _salario, Viola& two) {
     this->salario = _salario;
     two.getMarca();
 
-    if (_salario >= 5000) {
+    if (_salario >= 5000.00) {
         two.setMarca("Yamaha");
     }
-    if (_salario <= 4500 && _salario >= 1800) {
+    if (_salario <= 4500 && _salario >= 1800.00) {
         two.setMarca("Gilga");
     }
     else {
@@ -74,9 +77,9 @@ std::string Person::getGenero(void) {
 void Person::setGenero(std::string _genero) {
     genero = _genero;
 }
-std::string Person::getDormir(void) {
+/*std::string Person::getDormir(void) {
     return dormir;
 }
 void Person::setDormir(std::string _dormir) {
     dormir = _dormir;
-}
+}*/

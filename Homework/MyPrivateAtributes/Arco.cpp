@@ -3,11 +3,15 @@
 #include "Person.h"
 
 Arco::Arco() {
+    numCerdas = 0;
+    marca = "";
+    tension = "";
+    material = "";
+    largo = "";
+}
+Arco::~Arco() {
 
 }
-/*Arco::~Arco() {
-
-}*/
 Arco::Arco(std::string _marca, std::string _material) {
     this->marca = _marca;
     this->material = _material;
