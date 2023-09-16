@@ -50,3 +50,18 @@ std::string Viola::getMarca(void) {
 void Viola::setMarca(std::string _marca) {
     marca = _marca;
 }
+std::string Viola::getAfinacion(void) {
+    return afinacion;
+}
+void Viola::setAfinacion(std::string _afinacion) {
+    afinacion = _afinacion;
+}
+int Viola::getNumCuerdas(void) {
+    return numCuerdas;
+}
+void Viola::setNumCuerdas(int _numCuerdas) {
+    numCuerdas = _numCuerdas;
+}
+std::string Viola::getVolumen(void) {
+    return volumen;
+}

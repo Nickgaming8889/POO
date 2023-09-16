@@ -16,14 +16,38 @@ Person::Person(int _edad, float _estatura) {
     this->edad = _edad;
     this->estatura = _estatura;
 }
+Person::Person(std::string _dormir) {
+    this->dormir = _dormir;
+}
 Person::Person(int _edad, Viola& one) {
     this->edad = _edad;
-    one.getSide();
-    one.setSide("4/4 Side");
+    
+    if (_edad <= 10) {
+        one.setSide("1/4");
+    }
+    else if (_edad <= 13) {
+        one.setSide("2/4");
+    }
+    else if (_edad <= 15) {
+        one.setSide("3/4");
+    }
+    else {
+        one.setSide("4/4");
+    }
 }
 Person::Person(float _salario, Viola& two) {
     this->salario = _salario;
     two.getMarca();
+
+    if (_salario >= 5000) {
+        two.setMarca("Yamaha");
+    }
+    if (_salario <= 4500 && _salario >= 1800) {
+        two.setMarca("Gilga");
+    }
+    else {
+        two.setMarca("Marca Generica");
+    }
 }
 
 int Person::getEdad(void) {
@@ -49,4 +73,10 @@ std::string Person::getGenero(void) {
 }
 void Person::setGenero(std::string _genero) {
     genero = _genero;
+}
+std::string Person::getDormir(void) {
+    return dormir;
+}
+void Person::setDormir(std::string _dormir) {
+    dormir = _dormir;
 }

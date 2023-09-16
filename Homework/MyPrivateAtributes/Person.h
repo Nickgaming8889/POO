@@ -35,6 +35,9 @@ class Person {
 
         std::string getGenero(void);
         void setGenero(std::string);
+
+        std::string getDormir(void);
+        void setDormir(std::string);
 };
 
 #endif
