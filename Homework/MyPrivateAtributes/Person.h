@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include "Viola.h"
-#include "Arco.h"
+//#include "Arco.h"
 
 class Person {
     private:
@@ -12,7 +12,6 @@ class Person {
         float salario;
         std::string genero;
         std::string dormir;
-        //Viola;
 
     public:
         Person();

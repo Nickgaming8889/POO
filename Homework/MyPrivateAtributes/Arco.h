@@ -2,7 +2,7 @@
 #define ARCO_H
 
 #include <iostream>
-#include "Person.h"
+//#include "Person.h"
 #include "Viola.h"
 
 class Arco {
