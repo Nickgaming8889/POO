@@ -21,14 +21,14 @@ Arco::Arco(int _numCerdas, std::string _tension) {
 Arco::Arco(std::string _tension) {
     this->tension = _tension;
 }
-Arco::Arco(Viola& one, std::string _largo) {
-    one.getSide();
+void Arco::arcoSide(Viola _side, std::string _largo) {
+    _side.getSide();
 
-    if (one.getSide() == "4/4") {
+    if (_side.getSide() == "4/4") {
         _largo = "Grande";
         this->largo = _largo;
     }
-    else if (one.getSide() == "3/4" || one.getSide() == "2/4") {
+    else if (_side.getSide() == "3/4" || _side.getSide() == "2/4") {
         _largo = "Mediano";
         this->largo = _largo;
     }

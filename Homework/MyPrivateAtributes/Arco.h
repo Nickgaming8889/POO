@@ -12,13 +12,14 @@ class Arco {
         std::string material;
         std::string largo;
         std::string marca;
+        Viola side;
 
     public:
         Arco();
         Arco(std::string, std::string);
         Arco(int, std::string);
         Arco(std::string);
-        Arco(Viola &one, std::string);
+        void arcoSide(Viola, std::string);
 
         ~Arco();
 
