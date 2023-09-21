@@ -12,6 +12,7 @@ class Viola {
         std::string afinacion;
         int numCuerdas;
         std::string volumen;
+        Arco tension;
 
     public:
         Viola();
@@ -19,7 +20,7 @@ class Viola {
         Viola(std::string, std::string);
         //Viola(float); Esta no va...
         Viola(std::string);
-        Viola(Arco &one, std::string);
+        Viola(Arco, std::string);
 
         ~Viola();
 

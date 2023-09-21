@@ -12,13 +12,15 @@ class Person {
         float salario;
         std::string genero;
         std::string dormir;
+        Viola side;
+        Viola marca;
 
     public:
         Person();
         Person(std::string);
         Person(int, float);
-        Person(int, Viola &one);
-        Person(float, Viola &two);
+        Person(int, Viola);
+        Person(float, Viola);
         
         ~Person();
 

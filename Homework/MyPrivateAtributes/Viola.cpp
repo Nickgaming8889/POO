@@ -19,19 +19,19 @@ Viola::Viola(std:: string _marca, std::string _side) {
 Viola::Viola(std::string _afinacion) {
     this->afinacion = _afinacion;
 }
-Viola::Viola(Arco& one, std::string _volumen) {
-    one.getTesion();
+Viola::Viola(Arco _tension, std::string _volumen) {
+    _tension.getTesion();
     this->volumen = _volumen;
 
-    if (one.getTesion() == "Alta") {
+    if (_tension.getTesion() == "Alta") {
         _volumen = "Del 80% o mas...";
         std::cout << _volumen << std::endl;
     }
-    else if (one.getTesion() == "Media") {
+    else if (_tension.getTesion() == "Media") {
         _volumen = "Del 50% o mas...";
         std::cout << _volumen << std::endl;
     }
-    else if (one.getTesion() == "Baja") {
+    else if (_tension.getTesion() == "Baja") {
         _volumen = "Del 50% o menos...";
         std::cout << _volumen << std::endl;
     }
