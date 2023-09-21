@@ -21,34 +21,34 @@ Person::Person(int _edad, float _estatura) {
 /*Person::Person(std::string _dormir) {
     this->dormir = _dormir;
 }*/
-Person::Person(int _edad, Viola& one) {
+Person::Person(int _edad, Viola _side) {
     this->edad = _edad;
     
     if (_edad <= 10) {
-        one.setSide("1/4");
+        _side.setSide("1/4");
     }
     else if (_edad <= 13) {
-        one.setSide("2/4");
+        _side.setSide("2/4");
     }
     else if (_edad <= 15) {
-        one.setSide("3/4");
+        _side.setSide("3/4");
     }
     else {
-        one.setSide("4/4");
+        _side.setSide("4/4");
     }
 }
-Person::Person(float _salario, Viola& two) {
+Person::Person(float _salario, Viola _marca) {
     this->salario = _salario;
-    two.getMarca();
+    _marca.getMarca();
 
     if (_salario >= 5000.00) {
-        two.setMarca("Yamaha");
+        _marca.setMarca("Yamaha");
     }
     if (_salario <= 4500 && _salario >= 1800.00) {
-        two.setMarca("Gilga");
+        _marca.setMarca("Gilga");
     }
     else {
-        two.setMarca("Marca Generica");
+        _marca.setMarca("Marca Generica");
     }
 }
 
