@@ -1,19 +1,17 @@
-#ifndef VIOLA_H
-#define VIOLA_H
+#ifndef BOW_H
+#define BOW_H
 
 #include <iostream>
 
-class Viola {
+class Bow {
     private:
         //Atributos...
-        
+
 
     public:
         //Metodos...
-        Viola();
+        Bow();
 
         //Destructor...
-        ~Viola();
+        ~Bow();
 };
-
-#endif
