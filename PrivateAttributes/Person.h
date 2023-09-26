@@ -5,8 +5,10 @@
 
 class Person {
     private:
-        //Metodos...
-
+        //Atributos...
+        int age;
+        float height;
+        std::string gender;
 
     public:
         //Metodos...
