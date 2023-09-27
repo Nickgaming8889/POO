@@ -8,14 +8,28 @@ class Viola {
     private:
         //Atributos...
         std::string side;
+        std::string marca;
         std::string afinacion;
         int numStrings;
-        Bow volume;
+        Bow* volume;
 
     public:
         //Metodos...
         Viola();
-        Viola(Bow *);
+        Viola(Bow*, std::string);
+
+
+        std::string getSide(void);
+        void setSide(std::string);
+
+        std::string getMarca(void);
+        void setMarca(std::string);
+
+        std::string getAfinacion(void);
+        void setAfinacion(std::string);
+
+        int getStrings(void);
+        void setStrings(int);
 
         //Destructor...
         ~Viola();
