@@ -1,13 +1,14 @@
 #include "ClassA.h"
 
 ClassA::ClassA() {
-    
+
 }
 ClassA::ClassA(int _num1, int _num2, int r) {
-    r = _num1 + _num2;
+    num1 = new int(_num1);
+    num2 = new int(_num2);
 
-    *this->num1 = _num1;
-    *this->num2 = _num2;
+    r = *num1 + *num2;
+
     this->result = r;
 }
 
