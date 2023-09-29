@@ -18,7 +18,8 @@ class Person {
         Person();
 
 
-        
+        int getAge(void);
+        void setAge(int);
 
         //Destructor...
         ~Person();
