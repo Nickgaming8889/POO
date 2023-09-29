@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     int uno = 15;
     int *dos = &uno;
-    int *tres = new int(25);
+    int *tres = new int(24);
     int vec[5] = {45, 87, 46, 7, 4};
 
     cout << &uno << endl;
