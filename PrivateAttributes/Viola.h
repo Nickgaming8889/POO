@@ -11,7 +11,7 @@ class Viola {
         std::string marca;
         std::string afinacion;
         int numStrings;
-        Bow* volume;
+        Person* volume;
 
     public:
         //Metodos...

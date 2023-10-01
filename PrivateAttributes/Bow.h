@@ -8,10 +8,10 @@ class Bow {
     private:
         //Atributos...
         std::string material;
-        std::string tension;
+        std::string largo;
         std::string marca;
         int numCerdas;
-        Viola* side;
+        int tension;
 
     public:
         //Metodos...
@@ -21,14 +21,17 @@ class Bow {
         std::string getMaterial(void);
         void setMaterial(std::string);
 
-        std::string getTension(void);
-        void setTension(std::string);
+        std::string getLargo(void);
+        void setLargo(std::string);
 
         std::string getMarca(void);
         void setMarca(std::string);
 
         int getCerdas(void);
         void setCerdas(int);
+
+        int getTension(void);
+        void setTension(int);
 
         //Destructor...
         ~Bow();
