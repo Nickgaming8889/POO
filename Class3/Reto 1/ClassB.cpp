@@ -1,7 +1,7 @@
 #include "ClassB.h"
 
 ClassB::ClassB() {
-
+    result = 0;
 }
 ClassB::ClassB(int _num1, int _num2, int _result) {
     num1 = new int(_num1);

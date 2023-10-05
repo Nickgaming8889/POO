@@ -6,3 +6,5 @@ Person::Person() {
 Person::Person() {
     
 }
+
+//Getters & Setters...
