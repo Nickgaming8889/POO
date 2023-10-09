@@ -11,7 +11,7 @@ class Escuela {
 
     public:
         Escuela();
-        Escuela(int*, int*, std::string*);
+        Escuela(int, int, std::string);
         Escuela(int*, int*, std::string*);
 
         int* getAlumnos(void);
