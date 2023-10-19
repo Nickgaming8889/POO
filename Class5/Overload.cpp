@@ -14,7 +14,7 @@ Overload::Overload(int n) {
 
 //Operadores de Flujo...
 std::ostream &operator<<(std::ostream &_output, const Overload &_data) {
-    _output << _data.x << std::endl;
+    _output << _data.x;
     return _output;
 }
 std::istream &operator>>(std::istream &_enter, Overload &_data) {
