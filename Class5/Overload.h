@@ -7,24 +7,19 @@ class Overload {
     private:
         //Attributes...
         int x;
-        int y;
-        float z;
 
     public:
         Overload();
+        Overload(int);
         Overload operator-(Overload&);
         friend Overload operator*(Overload&, Overload&);
+        friend std::ostream &operator<<(std::ostream &, const Overload&);
+        friend std::istream &operator>>(std::istream &, Overload&);
 
         ~Overload();
 
         int getX(void);
         void setX(int);
-
-        int getY(void);
-        void setY(int);
-
-        int getZ(void);
-        void setZ(int);
 
 };
 
