@@ -16,6 +16,7 @@ class Bow {
     public:
         //Metodos...
         Bow();
+        Bow(std::string, std::string, std::string, int, int);
 
 
         std::string getMaterial(void);

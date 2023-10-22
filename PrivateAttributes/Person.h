@@ -7,17 +7,18 @@
 class Person {
     private:
         //Atributos...
+        std::string name;
         int age;
         float height;
         float salary;
         Viola* side;
-        Viola* marca;
 
     public:
         //Metodos...
         Person();
 
-
+        std::string getName(void);
+        void setName(std::string);
 
         int getAge(void);
         void setAge(int);

@@ -3,9 +3,20 @@
 Viola::Viola() {
     
 }
-Viola::Viola(Bow* _volumen, std::string _side) {
-
+/*Imprime todos los atributos locales de Viola, 
+excluyendo el largo del Bow(Arco)*/
+Viola::Viola(std::string _side, std::string _marca, std::string _afinacion, int _numStrings) {
+    this->side = _side;
+    this->marca = _marca;
+    this->afinacion = _afinacion;
+    this->numStrings = _numStrings;
 }
+/*Basado en el tamaño del instrumento, sera el tipo de 
+largo en el arco*/
+Viola::Viola(Bow* _largo, std::string _side) {
+    
+}
+
 
 //Getters and Setters...
 std::string Viola::getSide() {

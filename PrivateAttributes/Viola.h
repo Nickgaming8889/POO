@@ -11,11 +11,13 @@ class Viola {
         std::string marca;
         std::string afinacion;
         int numStrings;
-        //Person* volume;
+        Bow* largo;
+        
 
     public:
         //Metodos...
         Viola();
+        Viola(std::string, std::string, std::string, int);
         Viola(Bow*, std::string);
 
 
