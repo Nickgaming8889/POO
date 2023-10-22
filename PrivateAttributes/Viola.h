@@ -11,7 +11,7 @@ class Viola {
         std::string marca;
         std::string afinacion;
         int numStrings;
-        Bow* largo;
+        Bow* attribute;
         
 
     public:

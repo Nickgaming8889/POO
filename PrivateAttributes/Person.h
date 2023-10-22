@@ -9,22 +9,19 @@ class Person {
         //Atributos...
         std::string name;
         int age;
-        float height;
         float salary;
-        Viola* side;
+        Viola* attribute;
 
     public:
         //Metodos...
         Person();
+        Person(std::string, int, float, Viola*);
 
         std::string getName(void);
         void setName(std::string);
 
         int getAge(void);
         void setAge(int);
-
-        float getHeight(void);
-        void setHeight(float);
 
         float getSalary(void);
         void setSalary(float);

@@ -1,10 +1,13 @@
 #include "Person.h"
 
 Person::Person() {
-
+    
 }
-Person::Person() {
-
+Person::Person(std::string _name, int _age, float _salary, Viola *_attribute) {
+    this->name = _name;
+    this->age = _age;
+    this->salary = _salary;
+    this->attribute = _attribute;
 }
 
 //Getters & Setters...
@@ -19,12 +22,6 @@ int Person::getAge() {
 }
 void Person::setAge(int _age) {
     this->age = _age;
-}
-float Person::getHeight() {
-    return height;
-}
-void Person::setHeight(float _height) {
-    this->height = _height;
 }
 float Person::getSalary() {
     return salary;
