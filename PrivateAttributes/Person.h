@@ -16,6 +16,8 @@ class Person {
         //Metodos...
         Person();
         Person(std::string, int, float, Viola*);
+        Person(int, Viola*);
+        Person(float, Viola*);
 
         std::string getName(void);
         void setName(std::string);

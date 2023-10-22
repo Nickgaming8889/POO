@@ -3,8 +3,8 @@
 Viola::Viola() {
     
 }
-/*Imprime todos los atributos locales de Viola, 
-excluyendo el largo del Bow(Arco)*/
+/*Guarda los valores dentro de las variables, mediente
+un constructor sobrecargado*/
 Viola::Viola(std::string _side, std::string _marca, std::string _afinacion, int _numStrings) {
     this->side = _side;
     this->marca = _marca;

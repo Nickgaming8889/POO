@@ -9,6 +9,16 @@ Person::Person(std::string _name, int _age, float _salary, Viola *_attribute) {
     this->salary = _salary;
     this->attribute = _attribute;
 }
+/*Adquiere el el tamaño del instrumento, mediante
+la edad de la persona*/
+Person::Person(int _age, Viola *_attribute1) {
+
+}
+/*Adquiere la marca del instrumento segun el
+salario de la persona*/
+Person::Person(float _salary, Viola *_attribute2) {
+    
+}
 
 //Getters & Setters...
 std::string Person::getName() {

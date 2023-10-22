@@ -18,6 +18,7 @@ class Viola {
         //Metodos...
         Viola();
         Viola(std::string, std::string, std::string, int);
+        Viola(int);
         Viola(Bow*, std::string);
 
 
