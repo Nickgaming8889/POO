@@ -15,7 +15,7 @@ int main() {
     std::cout << "Tamanio Viola: " << one.getSide() << std::endl;
     std::cout << "Marca de Viola: " << one.getMarca() << std::endl;
     std::cout << "Afinacion: " << five.getAfinacion() << std::endl;
-    std::cout << "Calidad del arco" << six.getMarca() << std::endl;
+    std::cout << "Calidad del arco: " << six.getMarca() << std::endl;
     std::cout << "Tension del Arco maxima: " << four.getTension() << "%" << std::endl;
 
     return 0;
