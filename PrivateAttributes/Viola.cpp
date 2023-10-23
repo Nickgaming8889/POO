@@ -44,23 +44,29 @@ std::string Viola::getSide() {
     return side;
 }
 void Viola::setSide(std::string _side) {
-    side = _side;
+    this->side = _side;
 }
 std::string Viola::getMarca() {
     return marca;
 }
 void Viola::setMarca(std::string _marca) {
-    marca = _marca;
+    this->marca = _marca;
 }
 std::string Viola::getTipo() {
     return tipo;
 }
 void Viola::setTipo(std::string _tipo) {
-    tipo = _tipo;
+    this->tipo = _tipo;
 }
 int Viola::getStrings() {
     return numStrings;
 }
 void Viola::setStrings(int _numStrings) {
-    numStrings = _numStrings;
+    this->numStrings = _numStrings;
+}
+std::string Viola::getAfinacion(void) {
+    return afinacion;
+}
+void Viola::setAfinacion(std::string _afinacion) {
+    this->afinacion = _afinacion;
 }

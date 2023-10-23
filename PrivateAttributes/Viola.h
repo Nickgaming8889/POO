@@ -34,6 +34,9 @@ class Viola {
         int getStrings(void);
         void setStrings(int);
 
+        std::string getAfinacion(void);
+        void setAfinacion(std::string);
+
         //Destructor...
         ~Viola();
 };
