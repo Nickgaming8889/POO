@@ -18,7 +18,7 @@ class Bow {
         //Metodos...
         Bow();
         Bow(int);
-        Bow(std::string, std::string);
+        Bow(std::string);
         Bow(std::string, std::string, std::string, int, int);
 
 

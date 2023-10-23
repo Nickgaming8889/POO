@@ -15,18 +15,15 @@ Bow::Bow(std::string _material, std::string _largo, std::string _marca, int _num
     this->tension = _tension;
 }
 /*Segun el material del que este hecho, sera la marca*/
-Bow::Bow(std::string _material, std::string _marca) {
+Bow::Bow(std::string _material) {
     if (_material == "madera") {
-        _marca = "estandar";
-        this->marca = _marca;
+        this->marca = "estandar";
     }
     else if (_material == "Fibra de Vidrio") {
-        _marca = "Gama Media";
-        this->marca = _marca;
+        this->marca = "Gama Media";
     }
     else if (_material == "Fibra de Carbono") {
-        _marca = "Gama Alta";
-        this->marca = _marca;
+        this->marca = "Gama Alta";
     }
     
 }
