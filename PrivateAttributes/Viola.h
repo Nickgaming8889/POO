@@ -9,9 +9,9 @@ class Viola {
         //Atributos...
         std::string side;
         std::string marca;
-        std::string afinacion;
+        std::string tipo;
         int numStrings;
-        Bow* attribute;
+        std::string afinacion;
         
 
     public:
@@ -19,7 +19,7 @@ class Viola {
         Viola();
         Viola(std::string, std::string, std::string, int);
         Viola(int);
-        Viola(Bow*, std::string);
+        Viola(std::string);
 
 
         std::string getSide(void);
@@ -28,8 +28,8 @@ class Viola {
         std::string getMarca(void);
         void setMarca(std::string);
 
-        std::string getAfinacion(void);
-        void setAfinacion(std::string);
+        std::string getTipo(void);
+        void setTipo(std::string);
 
         int getStrings(void);
         void setStrings(int);

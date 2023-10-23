@@ -10,14 +10,15 @@ class Person {
         std::string name;
         int age;
         float salary;
-        Viola* attribute;
+        Viola* attribute; /*Se encuentra unicamente este 
+        atributo, pero se usan dos atributos de Viola*/ 
 
     public:
         //Metodos...
         Person();
         Person(std::string, int, float, Viola*);
         Person(int, Viola*);
-        Person(float, Viola*);
+        Person(std::string, float, Viola*);
 
         std::string getName(void);
         void setName(std::string);

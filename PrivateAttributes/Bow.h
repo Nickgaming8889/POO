@@ -12,10 +12,13 @@ class Bow {
         std::string marca;
         int numCerdas;
         int tension;
+        
 
     public:
         //Metodos...
         Bow();
+        Bow(int);
+        Bow(std::string, std::string);
         Bow(std::string, std::string, std::string, int, int);
 
 
