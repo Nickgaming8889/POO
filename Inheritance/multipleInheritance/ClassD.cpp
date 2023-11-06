@@ -10,14 +10,13 @@ void ClassD::sumNum() {
     this->totalnum = num1 + num2;
 }
 void ClassD::allCharacter() {
-
-    ClassB w;
-    w.sumSpecial();
+    
+    sumSpecial();
     sumMayus();
     sumMinus();
     sumNum();
 
-    cout << w.getTotal() << getTotal2() << getTotal3() << totalnum << endl;
+    cout << getTotal() << getTotal2() << getTotal3() << totalnum << endl;
 
 }
 

@@ -6,7 +6,7 @@
 #include "ClassA.h"
 using namespace std;
 
-class ClassC: public ClassA {
+class ClassC: virtual public ClassA {
     protected:
         //Attributes...
         string minus1;
