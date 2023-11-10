@@ -7,7 +7,7 @@
 using namespace std;
 
 
-class ClassD: ClassB, ClassC {
+class ClassD: public ClassB, ClassC {
     protected:
         //Attributes...
         string num1;

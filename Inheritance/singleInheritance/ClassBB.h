@@ -5,7 +5,7 @@
 #include "ClassAA.h"
 using namespace std;
 
-class ClassBB: ClassAA {
+class ClassBB: public ClassAA {
     protected:
         //Attributes...
         string career;
