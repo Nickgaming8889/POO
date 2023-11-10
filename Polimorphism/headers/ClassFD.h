@@ -19,7 +19,7 @@ class Car {
         virtual void addCarYear();
         virtual void viewInfo();
 
-        ~Car();
+        virtual ~Car();
 
 };
 
