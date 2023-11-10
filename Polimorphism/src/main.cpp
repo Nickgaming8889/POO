@@ -3,21 +3,13 @@
 using namespace std;
 
 int main() {
-    Car b;
-    Derivate1 r;
-    Derivate3 w;
+    Vehicle *b = new Vehicle();
+    Car *r = new Car();
+    Truck *w = new Truck();
+    Motocycle *t = new Motocycle();
 
-    //Father Class...
-    b.addCarModel(),  b.addCarMark(), b.addCarYear();
-    b.viewInfo();
-    cout << "" << endl;
-    //Son Class...
-    r.addCarMark(), r.addCarModel(), r.addCarYear();
-    r.viewInfo();
-    cout << "" << endl;
-    //Another Son Class...
-    w.addCarMark(), w.addCarModel(), w.addCarYear();
-    w.viewInfo();
+    r->addMark();   
+    r->viewInfo();
 
     return 0;
 }

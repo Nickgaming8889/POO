@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-class Car {
+class Vehicle {
     protected:
         //Attributes...
         string mark;
@@ -13,50 +13,50 @@ class Car {
 
     public:
         //Methods...
-        Car();
-        virtual void addCarMark();
-        virtual void addCarModel();
-        virtual void addCarYear();
+        Vehicle();
+        virtual void addMark();
+        virtual void addModel();
+        virtual void addYear();
         virtual void viewInfo();
 
-        virtual ~Car();
+        virtual ~Vehicle();
 
 };
 
-class Derivate1: public Car {
+class Car: public Vehicle {
     protected:
         //Attributes...
 
     public:
         //Methods...
-        void addCarMark();
-        void addCarModel();
-        void addCarYear();
+        void addMark();
+        void addModel();
+        void addYear();
         void viewInfo();       
 };
 
-class Derivate2: public Car {
+class Truck: public Vehicle {
     protected:
         //Attributes...
     
     public:
         //Methods...
-        void addCarMark();
-        void addCarModel();
-        void addCarYear();
+        void addMark();
+        void addModel();
+        void addYear();
         void viewInfo();
 
 };
 
-class Derivate3: public Car {
+class Motocycle: public Vehicle {
     protected:
         //Attributes...
 
     public:
         //Methods...
-        void addCarMark();
-        void addCarModel();
-        void addCarYear();
+        void addMark();
+        void addModel();
+        void addYear();
         void viewInfo();
         
 };
