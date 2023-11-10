@@ -6,7 +6,7 @@ Car::Car() {
     this->model = "Undefine";
 }
 Car::~Car() {
-
+    cout << "Thanks for watching." << endl;
 }
 
 //Father Methods...
