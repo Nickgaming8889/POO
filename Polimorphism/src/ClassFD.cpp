@@ -1,9 +1,9 @@
 #include "../headers/ClassFD.h"
 
 Vehicle::Vehicle() {
-    this->mark = "Undefine";
+    this->mark = "Undefine.";
+    this->model = "Undefine.";
     this->year = 0000;
-    this->model = "Undefine";
 }
 Vehicle::~Vehicle() {
     cout << "Thanks for watching." << endl;
@@ -21,9 +21,9 @@ void Vehicle::addYear() {
 }
 void Vehicle::viewInfo() {
     cout << "\nVehicle Information: " << endl;
-    cout << "Car Mark: " << mark << endl;
-    cout << "Car Model: " << model << endl;
-    cout << "Car Year: " << year << "." << endl;
+    cout << "Car Mark: " << mark << "." << endl;
+    cout << "Car Model: " << model << "." << endl;
+    cout << "Car Year: " << year << ".\n" << endl;
 }
 
 //Derivate1 Class Methods...
@@ -43,9 +43,9 @@ void Car::addYear() {
 }
 void Car::viewInfo() {
     cout << "\nVehicle Information: " << endl;
-    cout << "Car Mark: " << mark << endl;
-    cout << "Car Model: " << model << endl;
-    cout << "Car Year: " << year << "." << endl;
+    cout << "Car Mark: " << mark << "." << endl;
+    cout << "Car Model: " << model << "." << endl;
+    cout << "Car Year: " << year << ".\n" << endl;
 }
 
 //Derivate2 Class Methods...
@@ -65,29 +65,29 @@ void Truck::addYear() {
 }
 void Truck::viewInfo() {
     cout << "\nVehicle Information: " << endl;
-    cout << "Truck Mark: " << mark << endl;
-    cout << "Truck Model: " << model << endl;
-    cout << "Truck Year: " << year << "." << endl;
+    cout << "Truck Mark: " << mark << "." << endl;
+    cout << "Truck Model: " << model << "." << endl;
+    cout << "Truck Year: " << year << ".\n" << endl;
 }
 
 //Derivate3 Class Methods...
 void Motocycle::addMark() {
-    cout << "Motocycle Mark: " << endl;
+    cout << "Motocycle Mark: ";
     cin >> mark;
     while (getchar() != '\n');
 }
 void Motocycle::addModel() {
-    cout << "Motocycle Model: " << endl;
+    cout << "Motocycle Model: ";
     cin >> model;
     while (getchar() != '\n');
 }
 void Motocycle::addYear() {
-    cout << "Model Year: " << endl;
+    cout << "Model Year: ";
     cin >> this->year;
 }
 void Motocycle::viewInfo() {
     cout << "\nVehicle Information: " << endl;
-    cout << "Motocycle Mark: " << mark << endl;
-    cout << "Motocycle Model: " << model << endl;
-    cout << "Motocycle Year: " << year << "." << endl;
+    cout << "Motocycle Mark: " << mark << "." << endl;
+    cout << "Motocycle Model: " << model << "." << endl;
+    cout << "Motocycle Year: " << year << ".\n" << endl;
 }
