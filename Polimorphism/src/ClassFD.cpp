@@ -1,8 +1,8 @@
 #include "../headers/ClassFD.h"
 
 Vehicle::Vehicle() {
-    this->mark = "Undefine.";
-    this->model = "Undefine.";
+    this->mark = "Undefine";
+    this->model = "Undefine";
     this->year = 0000;
 }
 Vehicle::~Vehicle() {
