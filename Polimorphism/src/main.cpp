@@ -3,12 +3,14 @@
 using namespace std;
 
 int main() {
-    Vehicle *b = new Vehicle();
-    Car *r = new Car();
-    Truck *w = new Truck();
-    Motocycle *t = new Motocycle();
+    Vehicle* b = new Vehicle();
+    Car* r = new Car();
+    Truck* w = new Truck();
+    Motocycle* t = new Motocycle();
 
-    r->addMark();   
+    r->addMark();
+    r->addModel();
+    r->addYear();
     r->viewInfo();
 
     return 0;

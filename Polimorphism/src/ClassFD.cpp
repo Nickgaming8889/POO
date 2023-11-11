@@ -20,6 +20,7 @@ void Vehicle::addYear() {
     
 }
 void Vehicle::viewInfo() {
+    cout << "\nVehicle Information: " << endl;
     cout << "Car Mark: " << mark << endl;
     cout << "Car Model: " << model << endl;
     cout << "Car Year: " << year << "." << endl;
@@ -27,20 +28,21 @@ void Vehicle::viewInfo() {
 
 //Derivate1 Class Methods...
 void Car::addMark() {
-    cout << "Car Mark: " << endl;
+    cout << "Car Mark: ";
     cin >> mark;
     while (getchar() != '\n');
 }
 void Car::addModel() {
-    cout << "Car Model: " << endl;
+    cout << "Car Model: ";
     cin >> model;
     while (getchar() != '\n');
 }
 void Car::addYear() {
-    cout << "Model Year: " << endl;
+    cout << "Model Year: ";
     cin >> this->year;
 }
 void Car::viewInfo() {
+    cout << "\nVehicle Information: " << endl;
     cout << "Car Mark: " << mark << endl;
     cout << "Car Model: " << model << endl;
     cout << "Car Year: " << year << "." << endl;
@@ -62,6 +64,7 @@ void Truck::addYear() {
     cin >> this->year;
 }
 void Truck::viewInfo() {
+    cout << "\nVehicle Information: " << endl;
     cout << "Truck Mark: " << mark << endl;
     cout << "Truck Model: " << model << endl;
     cout << "Truck Year: " << year << "." << endl;
@@ -83,6 +86,7 @@ void Motocycle::addYear() {
     cin >> this->year;
 }
 void Motocycle::viewInfo() {
+    cout << "\nVehicle Information: " << endl;
     cout << "Motocycle Mark: " << mark << endl;
     cout << "Motocycle Model: " << model << endl;
     cout << "Motocycle Year: " << year << "." << endl;
