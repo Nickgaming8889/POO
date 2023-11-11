@@ -9,7 +9,7 @@ se tienen que desarrollar en cada clase derivada).
 Ejemplos para peticion de datos:
 
 Ejemplo Car:
-Marca: Nissan
+Marca: Toyota
 Modelo: Supra Mk4
 Año: 1991
 
@@ -18,4 +18,5 @@ Marca: Ninja
 Modelo: 200RS
 Año: 2021
 
-*Valores de ejemplo para el codigo.
+*Valores de ejemplo para el codigo. (El codigo cuenta con validacion de
+entrada de tipo de dato 'int').

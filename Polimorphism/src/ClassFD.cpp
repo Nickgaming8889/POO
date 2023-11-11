@@ -38,8 +38,20 @@ void Car::addModel() {
     while (getchar() != '\n');
 }
 void Car::addYear() {
+    bool valid = false;
+
     cout << "Model Year: ";
-    cin >> this->year;
+    do {
+        cin >> year;
+        if (cin.good()) {
+            valid = true;
+        }
+        else {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Invalid format. (Please enter a numeric year)" << endl;
+        }
+    } while (!valid);
 }
 void Car::viewInfo() {
     cout << "\nVehicle Information: " << endl;
@@ -60,8 +72,20 @@ void Truck::addModel() {
     while (getchar() != '\n');
 }
 void Truck::addYear() {
+    bool valid = false;
+
     cout << "Model Year: ";
-    cin >> this->year;
+    do {
+        cin >> year;
+        if (cin.good()) {
+            valid = true;
+        }
+        else {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Invalid format. (Please enter a numeric year)" << endl;
+        }
+    } while (!valid);
 }
 void Truck::viewInfo() {
     cout << "\nVehicle Information: " << endl;
@@ -82,8 +106,20 @@ void Motocycle::addModel() {
     while (getchar() != '\n');
 }
 void Motocycle::addYear() {
+    bool valid = false;
+
     cout << "Model Year: ";
-    cin >> this->year;
+    do {
+        cin >> year;
+        if (cin.good()) {
+            valid = true;
+        }
+        else {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Invalid format. (Please enter a numeric year)" << endl;
+        }
+    } while (!valid);
 }
 void Motocycle::viewInfo() {
     cout << "\nVehicle Information: " << endl;

@@ -1,6 +1,7 @@
 #ifndef CLASSFD_H
 #define CLASSFD_H
 
+#include <limits>
 #include <iostream>
 using namespace std;
 
