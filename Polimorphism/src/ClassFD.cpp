@@ -50,17 +50,17 @@ void Car::viewInfo() {
 
 //Derivate2 Class Methods...
 void Truck::addMark() {
-    cout << "Truck Mark: " << endl;
+    cout << "Truck Mark: ";
     cin >> mark;
     while (getchar() != '\n');
 }
 void Truck::addModel() {
-    cout << "Truck Model: " << endl;
+    cout << "Truck Model: ";
     cin >> model;
     while (getchar() != '\n');
 }
 void Truck::addYear() {
-    cout << "Model Year: " << endl;
+    cout << "Model Year: ";
     cin >> this->year;
 }
 void Truck::viewInfo() {
